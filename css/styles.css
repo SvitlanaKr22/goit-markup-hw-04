@@ -8,8 +8,7 @@
   --secondary-background-color:#F5F4FA;
   --accent-background-color:#2F303A;
   --active-bg-color:#188CEB;
-
-  
+  --basic-border-color: #AFB1B8; 
 }
 
   body{
@@ -111,6 +110,9 @@
   } 
 
   .site-nav .list-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--basic-text-color); 
   }
 
@@ -123,11 +125,19 @@
   .site-nav .link.current{
     color: var(--accent-color);
   }
+  /*HW 04  */
 
+    .link-icon{
+      fill: currentColor;
+    }
+   
   /* Стилі секцій */
   .hero{
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 280px;
+    background-image: linear-gradient(to left,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/imghero.jpg');
     background-color: var(--accent-background-color);
   } 
 
@@ -214,6 +224,22 @@
   line-height: 1.71;
 }
 
+.featuare-icon{
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px; 
+  margin-bottom: 30px;
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+}
+
+.fetuare-list-icon{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Секція Чим займаємося */
 .section-do{
   padding-top: 0;
@@ -267,7 +293,86 @@
     text-align: center;
   }
 
+  .social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-top: 16px;
+  }
+
+  .social-list-item{
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    color: #AFB1B8;
+    background-color: var(--secondary-text-color);
+    
+    border-radius: 50%;
+  }
+
+  .social-icon{
+    fill: currentColor;
+  } 
+
+  .social-list-link:hover,
+  .social-list-link:focus{
+    background-color: var(--accent-color);
+  }
+
+  .social-list-link:hover .social-icon,
+  .social-list-link:focus .social-icon{
+    fill: var(--primary-bg-color);
+  }
+
+/* Стилі Постійні кліенти */
+
+  .list-client-icon{
+    width: 170px;
+    height: 92px;
+  }
+
+  .list-client-icon:not(:last-child){
+   margin-right: 30px;
+  }
+
+  .link-icon-client{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 16px 32px;
+    border: 1px solid  var(--basic-border-color);
+    border-radius: 4px;
+  }
+
+  .client-ikon{
+     fill: var(--basic-border-color);
+  }
+
+  .link-icon-client:hover,
+  .link-icon-client:focus{
+    border: 1px solid  var(--accent-color);
+    border-radius: 4px;
+  }
+
+  .link-icon-client:hover .client-ikon,
+  .link-icon-client:focus .client-ikon{
+    fill: var(--accent-color);
+  }
+
   /* Стилі Наші роботи Портфоліо  */
+  
   .list-btn{
     display: flex;
     justify-content: center;
