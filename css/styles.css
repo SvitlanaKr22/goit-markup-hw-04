@@ -430,6 +430,15 @@
     border-top: 0;
     background: var(--primary-bg-color);
   }
+  .link-card{
+    display:inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .link-card:hover,
+  .link-card:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
   .list-works{
     margin-bottom: 4px;
@@ -457,12 +466,6 @@
     margin-bottom: 20px;
   }
 
-  .logo-link>.logo-text,
-  .mail-address
-  {
-    color: var(--secondary-text-color);
-  } 
-
   .link-address{
     display:inline-block;
     font-style: normal;
@@ -471,6 +474,11 @@
     color: rgba(255 255 255 / .6);
     text-decoration: none;
   }
+
+  .logo-link>.logo-text,
+  .mail-address{
+  color: var(--secondary-text-color);
+ }
 
    .list-link-footer:not(:last-child){
     margin-bottom: 9px;
