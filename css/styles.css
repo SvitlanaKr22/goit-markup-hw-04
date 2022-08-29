@@ -56,6 +56,9 @@
   }
 
 /* Стилі заголовка  */
+  .header-studio{
+   border-bottom: 1px solid #ECECEC; 
+  }
 
   .logo-header{
     padding-top: 24px;
@@ -80,8 +83,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;;
-    
+    /* border-bottom: 1px solid #ECECEC;   */
   }
 
   .page-nav{
@@ -114,6 +116,7 @@
     align-items: center;
     gap: 10px;
     color: var(--basic-text-color); 
+    fill: currentColor;
   }
 
   .site-nav .link:hover,
@@ -127,18 +130,22 @@
   }
   /*HW 04  */
 
-    .link-icon{
+    /* .link-icon{
       fill: currentColor;
     }
-   
+    */
   /* Стилі секцій */
   .hero{
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 280px;
+    margin: 0 auto;
     background-image: linear-gradient(to left,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/imghero.jpg');
     background-color: var(--accent-background-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;     
   } 
 
   .title{   
@@ -225,13 +232,15 @@
 }
 
 .featuare-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px; 
   margin-bottom: 30px;
   background: var(--secondary-background-color);
   border-radius: 4px;
+
 }
 
 .fetuare-list-icon{
@@ -313,23 +322,16 @@
     color: #AFB1B8;
     background-color: var(--secondary-text-color);
     border-radius: 50%;
-  }
-
-  .social-icon{
     fill: currentColor;
-  } 
+  }
 
   .social-list-link:hover,
   .social-list-link:focus{
+    color: var(--primary-bg-color);
     background-color: var(--accent-color);
   }
 
-  .social-list-link:hover .social-icon,
-  .social-list-link:focus .social-icon{
-    fill: var(--primary-bg-color);
-  }
-
-/* Стилі Постійні кліенти */
+ /* Стилі Постійні кліенти */
 
   .list-client-icon{
     width: 170px;
@@ -343,26 +345,25 @@
   .link-icon-client{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 16px 32px;
     border: 1px solid  var(--basic-border-color);
     border-radius: 4px;
+    color: var(--basic-border-color);
+    fill: currentColor;
   }
 
   .client-ikon{
-     fill: var(--basic-border-color);
+    width: 106px;
+    height: 60px;
   }
 
   .link-icon-client:hover,
   .link-icon-client:focus{
     border: 1px solid  var(--accent-color);
     border-radius: 4px;
-  }
-
-  .link-icon-client:hover .client-ikon,
-  .link-icon-client:focus .client-ikon{
-    fill: var(--accent-color);
+    color: var(--accent-color);
   }
 
   /* Стилі Наші роботи Портфоліо  */
@@ -491,14 +492,14 @@
   .content-footer{
     display: flex;
     align-items: baseline;
-    gap: 70px;
+    gap: 94px;
   }
 
   .social-net-title{
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-bg-color); 
   }
